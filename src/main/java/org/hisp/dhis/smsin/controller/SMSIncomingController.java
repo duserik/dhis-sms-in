@@ -28,7 +28,7 @@ public class SMSIncomingController
   private DHISAPI dhisapi;
   
   @RequestMapping({"/sms"})
-  public ModelAndView helloIndex(@RequestParam("sender") String sender, @RequestParam("message") String message)
+  public ModelAndView helloIndex(@RequestParam("originator") String sender, @RequestParam("message") String message)
   {
     ModelAndView mav = new ModelAndView();
     mav.setViewName("main.jsp");
